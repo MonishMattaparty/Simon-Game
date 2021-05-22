@@ -1,1 +1,1615 @@
-[class~=container]{display:block;}[class~=container]{width:50%;}[class~=container]{margin-left:auto;}[class~=container]{margin-bottom:auto;}[class~=container]{margin-right:auto;}[class~=container]{margin-top:auto;}[class~=btn]{margin-left:.260416667in;}[class~=btn]{margin-bottom:.260416667in;}#level-title{font-family:"Press Start 2P",cursive;}[class~=btn]{margin-right:.260416667in;}#level-title{font-size:3rem;}[class~=btn]{margin-top:.260416667in;}[class~=btn]{display:inline-block;}#level-title{margin-left:5%;}[class~=btn]{height:12.5pc;}[class~=btn]{width:150pt;}[class~=btn]{border-left-width:.104166667in;}[class~=btn]{border-bottom-width:.104166667in;}[class~=btn]{border-right-width:.104166667in;}#level-title{margin-bottom:5%;}[class~=btn]{border-top-width:.104166667in;}[class~=btn]{border-left-style:solid;}[class~=btn]{border-bottom-style:solid;}[class~=btn]{border-right-style:solid;}[class~=btn]{border-top-style:solid;}[class~=btn]{border-left-color:black;}[class~=btn]{border-bottom-color:black;}[class~=btn]{border-right-color:black;}[class~=btn]{border-top-color:black;}#level-title{margin-right:5%;}#level-title{margin-top:5%;}[class~=btn]{border-image:none;}[class~=btn]{border-radius:20%;}[class~=game-over],[class~=red]{background-color:red;}[class~=game-over]{opacity:.8;}[class~=green]{background-color:green;}[class~=blue]{background-color:blue;}[class~=yellow]{background-color:yellow;}#footer-text,#level-title{color:#fef2bf;}[class~=pressed]{box-shadow:0 0 15pt white;}[class~=pressed]{background-color:grey;}#footer-text{font-family:"Quicksand",sans-serif;}#footer-text{font-size:.9rem;}body{text-align:center;}body{background-color:#011f3f;}
+body {
+    text-align: center;
+    background-color: #011F3F;
+}
+  
+#level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin:  5%;
+    color: #FEF2BF;
+}
+
+#footer-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.90rem;
+    color: #FEF2BF;
+}
+  
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+  
+.btn {
+    margin: 25px;
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    border: 10px solid black;
+    border-radius: 20%;
+}
+  
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+  
+.red {
+    background-color: red;
+}
+  
+.green {
+    background-color: green;
+}
+  
+.blue {
+    background-color: blue;
+}
+  
+.yellow {
+    background-color: yellow;
+}
+  
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+/* Responsiveness Section */
+
+@media (min-width: 1200px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            margin-bottom: 145px;
+        }
+
+        #footer-text {
+            margin-top: 145px;
+        }
+
+        .container {
+            width: 80%;
+        }
+
+        .btn {
+            margin: 30px;
+            height: 250px;
+            width: 250px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            margin-bottom: 105px;
+        }
+
+        #footer-text {
+            margin-top: 105px;
+        }
+
+        .container {
+            width: 80%;
+        }
+
+        .btn {
+            margin: 30px;
+            height: 250px;
+            width: 250px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            margin-bottom: 60px;
+        }
+
+        #footer-text {
+            margin-top: 60px;
+        }
+
+        .container {
+            width: 80%;
+        }
+
+        .btn {
+            margin: 30px;
+            height: 250px;
+            width: 250px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        .btn {
+            height: 225px;
+            width: 225px;
+        }
+
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            margin-bottom: 205px;
+        }
+
+        #footer-text {
+            margin-top: 205px;
+        }
+
+        .container {
+            width: 70%;
+        }
+
+        .btn {
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            margin-bottom: 165px;
+        }
+
+        #footer-text {
+            margin-top: 165px;
+        }
+
+        .container {
+            width: 70%;
+        }
+
+        .btn {
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            margin-bottom: 125px;
+        }
+
+        #footer-text {
+            margin-top: 125px;
+        }
+
+        .container {
+            width: 70%;
+        }
+
+        .btn {
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+
+    @media (max-height: 770px) {
+
+        .btn {
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            font-size: 2.90rem;
+            margin-bottom: 210px;
+        }
+
+        #footer-text {
+            font-size: 0.90rem;
+            margin-top: 210px;
+        }
+
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 2.90rem;
+            margin-bottom: 170px;
+        }
+
+        #footer-text {
+            font-size: 0.90rem;
+            margin-top: 170px;
+        }
+
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 2.90rem;
+            margin-bottom: 130px;
+        }
+
+        #footer-text {
+            font-size: 0.90rem;
+            margin-top: 130px;
+        }
+
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+
+    @media (max-height: 796px) {
+
+        #level-title {
+            font-size: 2.90rem;
+            margin:  5%;
+        }
+    
+        #footer-text {
+            font-size: 0.90rem;
+        }
+    
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 200px;
+            width: 200px;
+        }
+
+    }
+
+}
+
+@media (max-width: 920px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            font-size: 2.70rem;
+            margin-bottom: 245px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 245px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 175px;
+            width: 175px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 2.70rem;
+            margin-bottom: 205px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 205px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 175px;
+            width: 175px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 2.70rem;
+            margin-bottom: 160px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 160px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 175px;
+            width: 175px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 2.70rem;
+            margin-bottom: 110px;
+        }
+    
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 110px;
+        }
+    
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 175px;
+            width: 175px;
+        }
+
+    }
+
+    @media (max-height: 680px) {
+
+        #level-title {
+            font-size: 2.70rem;
+            margin:  5%;
+        }
+    
+        #footer-text {
+            font-size: 0.80rem;
+        }
+    
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 175px;
+            width: 175px;
+        }
+
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            font-size: 2.60rem;
+            margin-bottom: 275px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 275px;
+        }
+
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 2.60rem;
+            margin-bottom: 235px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 235px;
+        }
+
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 2.60rem;
+            margin-bottom: 190px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 190px;
+        }
+
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 2.60rem;
+            margin-bottom: 140px;
+        }
+    
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 140px;
+        }
+    
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+    @media (max-height: 720px) {
+
+        #level-title {
+            font-size: 2.60rem;
+            margin-bottom: 95px;
+        }
+    
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 95px;
+        }
+    
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+    @media (max-height: 636px) {
+
+        #level-title {
+            font-size: 2.60rem;
+            margin:  5%;
+        }
+    
+        #footer-text {
+            font-size: 0.70rem;
+        }
+    
+        .container {
+            width: 70%;
+        }
+    
+        .btn {
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            font-size: 2.40rem;
+            margin-bottom: 305px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 305px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 2.40rem;
+            margin-bottom: 265px;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 265px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 2.40rem;
+            margin-bottom: 220px;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 220px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 2.40rem;
+            margin-bottom: 170px;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 170px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 700px) {
+
+        #level-title {
+            font-size: 2.40rem;
+            margin-bottom: 115px;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 115px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 578px) {
+
+        #level-title {
+            font-size: 2.40rem;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            font-size: 2.10rem;
+            margin-bottom: 305px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 305px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 2.10rem;
+            margin-bottom: 265px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 265px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 2.10rem;
+            margin-bottom: 225px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 225px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 2.10rem;
+            margin-bottom: 175px;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 175px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 680px) {
+
+        #level-title {
+            font-size: 2.10rem;
+            margin-bottom: 105px;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 105px;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 568px) {
+
+        #level-title {
+            font-size: 2.10rem;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+        }
+
+        .container {
+            width: 80%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            font-size: 1.80rem;
+            margin-bottom: 310px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 310px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 1.80rem;
+            margin-bottom: 270px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 270px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 1.80rem;
+            margin-bottom: 230px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 230px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 1.80rem;
+            margin-bottom: 180px;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 180px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 680px) {
+
+        #level-title {
+            font-size: 1.80rem;
+            margin-bottom: 110px;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 110px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 560px) {
+
+        #level-title {
+            font-size: 1.80rem;
+        }
+
+        #footer-text {
+            font-size: 0.60rem;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            font-size: 1.70rem;
+            margin-bottom: 310px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 310px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 1.70rem;
+            margin-bottom: 270px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 270px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 1.70rem;
+            margin-bottom: 230px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 230px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 1.70rem;
+            margin-bottom: 180px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 180px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 680px) {
+
+        #level-title {
+            font-size: 1.70rem;
+            margin-bottom: 110px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 110px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+}
+
+@media (max-width: 410px) {
+
+    @media (max-height: 1080px) {
+
+        #level-title {
+            font-size: 1.60rem;
+            margin-bottom: 322px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 322px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 20px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 1.60rem;
+            margin-bottom: 282px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 282px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 20px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 1.60rem;
+            margin-bottom: 240px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 240px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 20px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 1.60rem;
+            margin-bottom: 190px;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+            margin-top: 190px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 20px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 658px) {
+
+        #level-title {
+            font-size: 1.60rem;
+        }
+
+        #footer-text {
+            font-size: 0.80rem;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 20px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    @media (max-height: 1000px) {
+
+        #level-title {
+            font-size: 1.50rem;
+            margin-bottom: 295px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 295px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 1.50rem;
+            margin-bottom: 252px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 252px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 1.50rem;
+            margin-bottom: 202px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 202px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 720px) {
+
+        #level-title {
+            font-size: 1.50rem;
+            margin-bottom: 155px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 155px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+    @media (max-height: 600px) {
+
+        #level-title {
+            font-size: 1.50rem;
+            margin-bottom: 95px;
+        }
+
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 95px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 125px;
+            width: 125px;
+        }
+
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    @media (max-height: 916px) {
+
+        #level-title {
+            font-size: 1.30rem;
+            margin-bottom: 280px;
+        }
+    
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 280px;
+        }
+    
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 100px;
+            width: 100px;
+        }
+
+    }
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 1.30rem;
+            margin-bottom: 230px;
+        }
+    
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 230px;
+        }
+    
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 100px;
+            width: 100px;
+        }
+
+    }
+
+    @media (max-height: 720px) {
+
+        #level-title {
+            font-size: 1.30rem;
+            margin-bottom: 182px;
+        }
+    
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 182px;
+        }
+    
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 100px;
+            width: 100px;
+        }
+
+    }
+
+    @media (max-height: 600px) {
+
+        #level-title {
+            font-size: 1.30rem;
+            margin-bottom: 122px;
+        }
+    
+        #footer-text {
+            font-size: 0.70rem;
+            margin-top: 122px;
+        }
+    
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 100px;
+            width: 100px;
+        }
+
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    @media (max-height: 816px) {
+
+        #level-title {
+            font-size: 1.20rem;
+            margin-bottom: 242px;
+        }
+    
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 242px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 90px;
+            width: 90px;
+        }
+
+    }
+
+    @media (max-height: 720px) {
+
+        #level-title {
+            font-size: 1.20rem;
+            margin-bottom: 195px;
+        }
+    
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 195px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 90px;
+            width: 90px;
+        }
+
+    }
+
+    @media (max-height: 600px) {
+
+        #level-title {
+            font-size: 1.20rem;
+            margin-bottom: 135px;
+        }
+    
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 135px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 90px;
+            width: 90px;
+        }
+
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    @media (max-height: 600px) {
+
+        #level-title {
+            font-size: 1.10rem;
+            margin-bottom: 145px;
+        }
+    
+        #footer-text {
+            font-size: 0.60rem;
+            margin-top: 145px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 15px;
+            height: 80px;
+            width: 80px;
+        }
+
+    }
+
+}
+
+@media (max-width: 280px) {
+
+    @media (max-height: 600px) {
+
+        #level-title {
+            font-size: 1rem;
+            margin-bottom: 158px;
+        }
+    
+        #footer-text {
+            font-size: 0.50rem;
+            margin-top: 158px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 10px;
+            height: 80px;
+            width: 80px;
+        }
+
+    }
+
+}
+
+@media (max-width: 260px) {
+
+    @media (max-height: 600px) {
+
+        #level-title {
+            font-size: 0.90rem;
+            margin-bottom: 168px;
+        }
+    
+        #footer-text {
+            font-size: 0.50rem;
+            margin-top: 168px;
+        }
+
+        .container {
+            width: 100%;
+        }
+    
+        .btn {
+            margin: 10px;
+            height: 70px;
+            width: 70px;
+        }
+
+    }
+
+}
