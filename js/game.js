@@ -1,1 +1,156 @@
-var _0x135b=['Level\x20:\x20','green','958345qUKFjE','.mp3','fadeIn','addClass','body','sounds/','removeClass','text','4GmjmIv','1163931PnJhmp','229557SZqZBV','3571jqeaSa','154yudBHj','Game\x20Over,\x20Press\x20Any\x20Key/Touch\x20Here\x20To\x20Restart!','blue','1592003rCoyqt','click','red','attr','113zbVaeq','429089XfvsCW','2281RNWwpb','.btn','game-over','sounds/wrong.mp3','play','#level-title','length'];function _0x29d0(_0x3cc000,_0xf3f525){_0x3cc000=_0x3cc000-0x178;var _0x135b1d=_0x135b[_0x3cc000];return _0x135b1d;}var _0x1c414e=_0x29d0;(function(_0x1183c0,_0x619325){var _0x2055e6=_0x29d0;while(!![]){try{var _0x233cac=-parseInt(_0x2055e6(0x17f))+-parseInt(_0x2055e6(0x188))+parseInt(_0x2055e6(0x18b))*parseInt(_0x2055e6(0x194))+parseInt(_0x2055e6(0x18e))+-parseInt(_0x2055e6(0x189))+parseInt(_0x2055e6(0x193))*parseInt(_0x2055e6(0x187))+-parseInt(_0x2055e6(0x18a))*parseInt(_0x2055e6(0x192));if(_0x233cac===_0x619325)break;else _0x1183c0['push'](_0x1183c0['shift']());}catch(_0x1dae53){_0x1183c0['push'](_0x1183c0['shift']());}}}(_0x135b,0xdcc55));var gameStarted=![],levelCount=0x0,gamePattern=[],userClickedPattern=[],buttonColors=[_0x1c414e(0x190),_0x1c414e(0x18d),_0x1c414e(0x17e),'yellow'];$(document)['on']('keydown',function(){!gameStarted&&(level(levelCount),toggleNextSequence(),gameStarted=!![]);}),$('#level-title')['on']('touchend',function(){!gameStarted&&(level(levelCount),toggleNextSequence(),gameStarted=!![]);}),$(_0x1c414e(0x195))['on'](_0x1c414e(0x18f),function(){var _0x3f772b=_0x1c414e;if(gameStarted){var _0x3fffeb=$(this)[_0x3f772b(0x191)]('id');userClickedPattern['push'](_0x3fffeb),checkAnswer(userClickedPattern['length']-0x1),playSound(_0x3fffeb),animatePress(_0x3fffeb);}});function level(_0x548e3d){var _0xf75c38=_0x1c414e;$(_0xf75c38(0x17b))[_0xf75c38(0x186)](_0xf75c38(0x17d)+_0x548e3d);}function toggleNextSequence(){userClickedPattern=[],levelCount++,level(levelCount);var _0x3cab09=nextSequence(),_0x461c6f=buttonColors[_0x3cab09];gamePattern['push'](_0x461c6f),animateRandomButtonChosen(_0x461c6f),playSound(_0x461c6f);}function nextSequence(){var _0x2d8de1=Math['random']();return _0x2d8de1=_0x2d8de1*0x4,_0x2d8de1=Math['floor'](_0x2d8de1),_0x2d8de1;}function animateRandomButtonChosen(_0x3c7a3d){var _0x22c7d4=_0x1c414e;$('#'+_0x3c7a3d)[_0x22c7d4(0x181)](0x64)['fadeOut'](0x64)['fadeIn'](0x64);}function checkAnswer(_0x265958){var _0x3ae768=_0x1c414e;userClickedPattern[_0x265958]===gamePattern[_0x265958]?userClickedPattern[_0x3ae768(0x17c)]===gamePattern[_0x3ae768(0x17c)]&&setTimeout(function(){toggleNextSequence();},0x3e8):gameOver();}function gameOver(){var _0x106f1d=_0x1c414e;gameOverSound(),$(_0x106f1d(0x183))[_0x106f1d(0x182)](_0x106f1d(0x178)),setTimeout(function(){var _0x18aafb=_0x106f1d;$(_0x18aafb(0x183))[_0x18aafb(0x185)](_0x18aafb(0x178));},0xc8),startOver();}function gameOverSound(){var _0x2183e7=_0x1c414e,_0x432db1=new Audio(_0x2183e7(0x179));_0x432db1[_0x2183e7(0x17a)]();}function startOver(){var _0x23c9c5=_0x1c414e;$('#level-title')[_0x23c9c5(0x186)](_0x23c9c5(0x18c)),gameStarted=![],levelCount=0x0,gamePattern=[];}function playSound(_0x55c3ca){var _0x198dbe=_0x1c414e,_0x314ac3=new Audio(_0x198dbe(0x184)+_0x55c3ca+_0x198dbe(0x180));_0x314ac3[_0x198dbe(0x17a)]();}function animatePress(_0x1a8d03){$('#'+_0x1a8d03)['addClass']('pressed'),setTimeout(function(){$('#'+_0x1a8d03)['removeClass']('pressed');},0x64);}
+/* Initial Variables */
+
+var gameStarted = false;
+var levelCount = 0;
+var gamePattern = [];
+var userClickedPattern = [];
+var buttonColors = ["red", "blue", "green", "yellow"];
+
+/* Keyboard Key Press Detection */
+
+$(document).on("keydown", function () {
+
+    if (!gameStarted) {
+        level(levelCount);
+        setTimeout(function () {
+            toggleNextSequence();
+        }, 1000);
+        gameStarted = true;
+    }
+
+});
+
+/* Touch Detection */
+
+$("#level-title").on("touchend", function () {
+
+    if (!gameStarted) {
+        level(levelCount);
+        setTimeout(function () {
+            toggleNextSequence();
+        }, 1000);
+        gameStarted = true;
+    }
+
+});
+
+/* Button Click Detection */
+
+$(".btn-ext-css").on("click", function () {
+
+    if (gameStarted) {
+        var userChosenColor = $(this).attr("id");
+        userClickedPattern.push(userChosenColor);
+        checkAnswer(userClickedPattern.length - 1);
+        playSound(userChosenColor);
+        animatePress(userChosenColor);
+    }
+
+});
+
+/* Current Level Detection */
+
+function level (currentLevel) {
+    $("#level-title").text("Level : " + currentLevel);
+}
+
+/* Next Sequence Operation */
+
+function toggleNextSequence () {
+    userClickedPattern = [];
+    levelCount ++;
+    level(levelCount);
+    var nextSequenceIndex = nextSequence();
+    var randomChosenColor = buttonColors[nextSequenceIndex];
+    gamePattern.push(randomChosenColor);
+    animateRandomButtonChosen(randomChosenColor);
+    playSound(randomChosenColor);
+}
+
+/* Next Sequence Detection */
+
+function nextSequence () {
+    var randomNumber = Math.random();
+    randomNumber = randomNumber * 4;
+    randomNumber = Math.floor(randomNumber);
+    return randomNumber;
+}
+
+/* Random Chosen Button Flash Animation */
+
+function animateRandomButtonChosen (currentRandomColor) {
+    $("#" + currentRandomColor).fadeIn(100).fadeOut(100).fadeIn(100);
+}
+
+/* User Pattern Matching With Game Pattern */
+
+function checkAnswer (userCurrentLevel) {
+
+    if (userClickedPattern[userCurrentLevel] === gamePattern[userCurrentLevel]) {
+        
+        if (userClickedPattern.length === gamePattern.length) {
+            setTimeout(function () {
+                toggleNextSequence();
+            }, 1000);
+        }
+
+    }
+
+    else {
+        gameOver();
+    }
+
+}
+
+/* Game Over Operation */
+
+function gameOver () {
+    gameOverSound();
+    $("body").addClass("game-over");
+    setTimeout(function () {
+        $("body").removeClass("game-over");
+    }, 200);
+    startOver();
+}
+
+/* Game Over Sound */
+
+function gameOverSound () {
+    var gameOverSound = new Audio("sounds/wrong.mp3");
+    gameOverSound.play();
+}
+
+/* Restarting Game Operation */
+
+function startOver () {
+    $("#level-title").text("Game Over, Press Any Key/Touch Here To Restart!");
+    gameStarted = false;
+    levelCount = 0;
+    gamePattern = [];
+}
+
+/* Game Sounds */
+
+function playSound (colorName) {
+    var gameSounds = new Audio("sounds/" + colorName + ".mp3");
+    gameSounds.play();
+}
+
+/* User Button Pressed Animation */
+
+function animatePress (currentColor) {
+    $("#" + currentColor).addClass("pressed");
+    setTimeout(function () {
+        $("#" + currentColor).removeClass("pressed");
+    }, 100);
+}
+
+/* User Curiosity About Simon Game */
+
+$("#about-history-section").slideUp();
+$("#about-section").on("click", function () {
+    $("#about-section").fadeOut().slideUp();
+    setTimeout(function () {
+        $("#about-history-section").removeClass("user-action").fadeIn().slideDown();
+    }, 3000);
+});

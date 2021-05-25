@@ -1,29 +1,120 @@
 body {
-    text-align: center;
     background-color: #011F3F;
 }
-  
+
+.center-or {
+    display: block;
+    text-align: center;
+}
+
+.user-action {
+    visibility: hidden;
+}
+
+#first-section {
+    background-color: #204163;
+    padding: 0% 0% 2%;
+}
+
+/* Navigation Bar */
+
+.navbar-dark .navbar-brand {
+    color: #B0A884;
+}
+
+.navbar-brand {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #FEF2BF;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #B0A884;
+}
+
+.nav-item {
+    padding: 0px 18px;
+}
+
+.nav-link {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.50rem;
+}
+
 #level-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 3rem;
     line-height: 1.5;
-    margin:  5%;
+    margin:  3%;
+    text-align: center;
+    color: #B0A884;
+}
+
+#third-section {
+    background-color: #204163;
+    font-family: 'Lancelot', cursive;
+    padding: 10% 3%;
+    color: #B0A884;
+}
+
+#third-section h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#third-section h3 {
+    font-size: 2.80rem;
+}
+
+#third-section p {
+    font-size: 1.85rem;
+}
+
+#fourth-section {
+    font-family: 'Lancelot', cursive;
+    margin: 10% auto;
+    padding: 0% 3%;
     color: #FEF2BF;
+}
+
+#fourth-section h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#fourth-section h5 {
+    font-size: 2.20rem;
+    text-align: center;
+}
+
+#fourth-section p {
+    font-size: 1.85rem;
+}
+
+#fifth-section p {
+    background-color: #204163;
+    padding: 20px 0px;
+    margin-bottom: -20px;
 }
 
 #footer-text {
     font-family: 'Quicksand', sans-serif;
-    font-size: 0.90rem;
-    color: #FEF2BF;
+    font-size: 1rem;
+    text-align: center;
+    color: #B0A884;
 }
   
-.container {
+.container-ext-css {
     display: block;
     width: 50%;
-    margin: auto;
+    margin: 10% auto;
+    text-align: center;
 }
   
-.btn {
+.btn-ext-css {
     margin: 25px;
     display: inline-block;
     height: 200px;
@@ -64,75 +155,8 @@ body {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            margin-bottom: 145px;
-        }
-
-        #footer-text {
-            margin-top: 145px;
-        }
-
-        .container {
+        .container-ext-css {
             width: 80%;
-        }
-
-        .btn {
-            margin: 30px;
-            height: 250px;
-            width: 250px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
-
-        #level-title {
-            margin-bottom: 105px;
-        }
-
-        #footer-text {
-            margin-top: 105px;
-        }
-
-        .container {
-            width: 80%;
-        }
-
-        .btn {
-            margin: 30px;
-            height: 250px;
-            width: 250px;
-        }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            margin-bottom: 60px;
-        }
-
-        #footer-text {
-            margin-top: 60px;
-        }
-
-        .container {
-            width: 80%;
-        }
-
-        .btn {
-            margin: 30px;
-            height: 250px;
-            width: 250px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        .btn {
-            height: 225px;
-            width: 225px;
         }
 
     }
@@ -143,72 +167,32 @@ body {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            margin-bottom: 205px;
+        #third-section h2 {
+            font-size: 2.70rem;
         }
 
-        #footer-text {
-            margin-top: 205px;
+        #third-section h3 {
+            font-size: 2.50rem;
+        }
+        
+        #third-section p {
+            font-size: 1.55rem;
+        }
+        
+        #fourth-section h2 {
+            font-size: 2.70rem;
         }
 
-        .container {
+        #fourth-section h5 {
+            font-size: 1.95rem;
+        }
+        
+        #fourth-section p {
+            font-size: 1.55rem;
+        }
+
+        .container-ext-css {
             width: 70%;
-        }
-
-        .btn {
-            height: 200px;
-            width: 200px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
-
-        #level-title {
-            margin-bottom: 165px;
-        }
-
-        #footer-text {
-            margin-top: 165px;
-        }
-
-        .container {
-            width: 70%;
-        }
-
-        .btn {
-            height: 200px;
-            width: 200px;
-        }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            margin-bottom: 125px;
-        }
-
-        #footer-text {
-            margin-top: 125px;
-        }
-
-        .container {
-            width: 70%;
-        }
-
-        .btn {
-            height: 200px;
-            width: 200px;
-        }
-
-    }
-
-    @media (max-height: 770px) {
-
-        .btn {
-            height: 200px;
-            width: 200px;
         }
 
     }
@@ -219,91 +203,56 @@ body {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            font-size: 2.90rem;
-            margin-bottom: 210px;
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 2.80rem;
         }
-
-        #footer-text {
-            font-size: 0.90rem;
-            margin-top: 210px;
+        
+        .nav-link {
+            font-size: 1.40rem;
         }
-
-        .container {
-            width: 70%;
-        }
-    
-        .btn {
-            height: 200px;
-            width: 200px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
 
         #level-title {
-            font-size: 2.90rem;
-            margin-bottom: 170px;
+            font-size: 2.82rem;
         }
 
-        #footer-text {
-            font-size: 0.90rem;
-            margin-top: 170px;
+        #third-section h2 {
+            font-size: 2.50rem;
         }
 
-        .container {
-            width: 70%;
+        #third-section h3 {
+            font-size: 2.40rem;
         }
-    
-        .btn {
-            height: 200px;
-            width: 200px;
+        
+        #third-section p {
+            font-size: 1.45rem;
         }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 2.90rem;
-            margin-bottom: 130px;
+        
+        #fourth-section h2 {
+            font-size: 2.50rem;
         }
 
-        #footer-text {
-            font-size: 0.90rem;
-            margin-top: 130px;
+        #fourth-section h5 {
+            font-size: 1.75rem;
         }
-
-        .container {
-            width: 70%;
-        }
-    
-        .btn {
-            height: 200px;
-            width: 200px;
-        }
-
-    }
-
-    @media (max-height: 796px) {
-
-        #level-title {
-            font-size: 2.90rem;
-            margin:  5%;
+        
+        #fourth-section p {
+            font-size: 1.45rem;
         }
     
         #footer-text {
-            font-size: 0.90rem;
+            font-size: 0.86rem;
         }
     
-        .container {
+        .container-ext-css {
             width: 70%;
+            margin: 12% auto;
         }
     
-        .btn {
-            height: 200px;
-            width: 200px;
+        .btn-ext-css {
+            height: 175px;
+            width: 175px;
         }
 
     }
@@ -314,114 +263,56 @@ body {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            font-size: 2.70rem;
-            margin-bottom: 245px;
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 2.20rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 245px;
+        .nav-link {
+            font-size: 1.10rem;
         }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 175px;
-            width: 175px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
 
         #level-title {
-            font-size: 2.70rem;
-            margin-bottom: 205px;
+            font-size: 2.22rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 205px;
+        #third-section h2 {
+            font-size: 2.10rem;
         }
 
-        .container {
-            width: 80%;
+        #third-section h3 {
+            font-size: 2rem;
         }
-    
-        .btn {
-            height: 175px;
-            width: 175px;
+        
+        #third-section p {
+            font-size: 1.25rem;
         }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 2.70rem;
-            margin-bottom: 160px;
+        
+        #fourth-section h2 {
+            font-size: 2.10rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 160px;
+        #fourth-section h5 {
+            font-size: 1.55rem;
         }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 175px;
-            width: 175px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 2.70rem;
-            margin-bottom: 110px;
+        
+        #fourth-section p {
+            font-size: 1.25rem;
         }
     
         #footer-text {
-            font-size: 0.80rem;
-            margin-top: 110px;
+            font-size: 0.86rem;
         }
     
-        .container {
+        .container-ext-css {
             width: 80%;
+            margin: 6% auto;
         }
     
-        .btn {
-            height: 175px;
-            width: 175px;
-        }
-
-    }
-
-    @media (max-height: 680px) {
-
-        #level-title {
-            font-size: 2.70rem;
-            margin:  5%;
-        }
-    
-        #footer-text {
-            font-size: 0.80rem;
-        }
-    
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 175px;
-            width: 175px;
+        .btn-ext-css {
+            height: 150px;
+            width: 150px;
         }
 
     }
@@ -432,137 +323,55 @@ body {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            font-size: 2.60rem;
-            margin-bottom: 275px;
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 2.20rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 275px;
+        .nav-link {
+            font-size: 1.10rem;
         }
-
-        .container {
-            width: 70%;
-        }
-    
-        .btn {
-            height: 150px;
-            width: 150px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
 
         #level-title {
-            font-size: 2.60rem;
-            margin-bottom: 235px;
+            font-size: 2rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 235px;
+        #third-section h2 {
+            font-size: 2.10rem;
         }
 
-        .container {
-            width: 70%;
+        #third-section h3 {
+            font-size: 2rem;
         }
-    
-        .btn {
-            height: 150px;
-            width: 150px;
+        
+        #third-section p {
+            font-size: 1.25rem;
         }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 2.60rem;
-            margin-bottom: 190px;
+        
+        #fourth-section h2 {
+            font-size: 2.10rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 190px;
+        #fourth-section h5 {
+            font-size: 1.55rem;
         }
-
-        .container {
-            width: 70%;
-        }
-    
-        .btn {
-            height: 150px;
-            width: 150px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 2.60rem;
-            margin-bottom: 140px;
+        
+        #fourth-section p {
+            font-size: 1.25rem;
         }
     
         #footer-text {
-            font-size: 0.70rem;
-            margin-top: 140px;
+            font-size: 0.86rem;
         }
     
-        .container {
+        .container-ext-css {
             width: 70%;
         }
     
-        .btn {
-            height: 150px;
-            width: 150px;
-        }
-
-    }
-
-    @media (max-height: 720px) {
-
-        #level-title {
-            font-size: 2.60rem;
-            margin-bottom: 95px;
-        }
-    
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 95px;
-        }
-    
-        .container {
-            width: 70%;
-        }
-    
-        .btn {
-            height: 150px;
-            width: 150px;
-        }
-
-    }
-
-    @media (max-height: 636px) {
-
-        #level-title {
-            font-size: 2.60rem;
-            margin:  5%;
-        }
-    
-        #footer-text {
-            font-size: 0.70rem;
-        }
-    
-        .container {
-            width: 70%;
-        }
-    
-        .btn {
-            height: 150px;
-            width: 150px;
+        .btn-ext-css {
+            height: 125px;
+            width: 125px;
         }
 
     }
@@ -573,134 +382,54 @@ body {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            font-size: 2.40rem;
-            margin-bottom: 305px;
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 2rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 305px;
+        .nav-link {
+            font-size: 1rem;
         }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
 
         #level-title {
-            font-size: 2.40rem;
-            margin-bottom: 265px;
+            font-size: 1.78rem;
         }
 
-        #footer-text {
-            font-size: 0.60rem;
-            margin-top: 265px;
+        #third-section h2 {
+            font-size: 2.10rem;
         }
 
-        .container {
-            width: 80%;
+        #third-section h3 {
+            font-size: 2rem;
         }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
+        
+        #third-section p {
+            font-size: 1.25rem;
         }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 2.40rem;
-            margin-bottom: 220px;
+        
+        #fourth-section h2 {
+            font-size: 2.10rem;
         }
 
-        #footer-text {
-            font-size: 0.60rem;
-            margin-top: 220px;
+        #fourth-section h5 {
+            font-size: 1.55rem;
         }
-
-        .container {
-            width: 80%;
+        
+        #fourth-section p {
+            font-size: 1.25rem;
         }
     
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 2.40rem;
-            margin-bottom: 170px;
-        }
-
         #footer-text {
-            font-size: 0.60rem;
-            margin-top: 170px;
+            font-size: 0.86rem;
         }
 
-        .container {
+        .container-ext-css {
             width: 80%;
+            margin: 12% auto;
         }
     
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 700px) {
-
-        #level-title {
-            font-size: 2.40rem;
-            margin-bottom: 115px;
-        }
-
-        #footer-text {
-            font-size: 0.60rem;
-            margin-top: 115px;
-        }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 578px) {
-
-        #level-title {
-            font-size: 2.40rem;
-        }
-
-        #footer-text {
-            font-size: 0.60rem;
-        }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
+        .btn-ext-css {
             height: 125px;
             width: 125px;
         }
@@ -713,134 +442,54 @@ body {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            font-size: 2.10rem;
-            margin-bottom: 305px;
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 2rem;
         }
-
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 305px;
+        
+        .nav-link {
+            font-size: 1rem;
         }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
 
         #level-title {
-            font-size: 2.10rem;
-            margin-bottom: 265px;
+            font-size: 1.60rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 265px;
-        }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 2.10rem;
-            margin-bottom: 225px;
-        }
-
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 225px;
-        }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 2.10rem;
-            margin-bottom: 175px;
-        }
-
-        #footer-text {
-            font-size: 0.60rem;
-            margin-top: 175px;
-        }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 680px) {
-
-        #level-title {
-            font-size: 2.10rem;
-            margin-bottom: 105px;
-        }
-
-        #footer-text {
-            font-size: 0.60rem;
-            margin-top: 105px;
-        }
-
-        .container {
-            width: 80%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 568px) {
-
-        #level-title {
+        #third-section h2 {
             font-size: 2.10rem;
         }
 
-        #footer-text {
-            font-size: 0.60rem;
+        #third-section h3 {
+            font-size: 2rem;
+        }
+        
+        #third-section p {
+            font-size: 1.25rem;
+        }
+        
+        #fourth-section h2 {
+            font-size: 2.10rem;
         }
 
-        .container {
-            width: 80%;
+        #fourth-section h5 {
+            font-size: 1.55rem;
+        }
+        
+        #fourth-section p {
+            font-size: 1.25rem;
         }
     
-        .btn {
+        #footer-text {
+            font-size: 0.86rem;
+        }
+
+        .container-ext-css {
+            width: 80%;
+            margin: 12% auto;
+        }
+    
+        .btn-ext-css {
             height: 125px;
             width: 125px;
         }
@@ -849,138 +498,58 @@ body {
 
 }
 
-@media (max-width: 510px) {
+@media (max-width: 520px) {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            font-size: 1.80rem;
-            margin-bottom: 310px;
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 2rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 310px;
+        .nav-link {
+            font-size: 1rem;
         }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
 
         #level-title {
-            font-size: 1.80rem;
-            margin-bottom: 270px;
+            font-size: 1.48rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 270px;
+        #third-section h2 {
+            font-size: 2.10rem;
         }
 
-        .container {
-            width: 100%;
+        #third-section h3 {
+            font-size: 2rem;
         }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
+        
+        #third-section p {
+            font-size: 1.25rem;
         }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 1.80rem;
-            margin-bottom: 230px;
+        
+        #fourth-section h2 {
+            font-size: 2.10rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 230px;
+        #fourth-section h5 {
+            font-size: 1.55rem;
         }
-
-        .container {
-            width: 100%;
+        
+        #fourth-section p {
+            font-size: 1.25rem;
         }
     
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 1.80rem;
-            margin-bottom: 180px;
-        }
-
         #footer-text {
-            font-size: 0.60rem;
-            margin-top: 180px;
+            font-size: 0.86rem;
         }
 
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 680px) {
-
-        #level-title {
-            font-size: 1.80rem;
-            margin-bottom: 110px;
-        }
-
-        #footer-text {
-            font-size: 0.60rem;
-            margin-top: 110px;
-        }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 560px) {
-
-        #level-title {
-            font-size: 1.80rem;
-        }
-
-        #footer-text {
-            font-size: 0.60rem;
-        }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
+        .btn-ext-css {
             height: 125px;
             width: 125px;
         }
@@ -989,117 +558,58 @@ body {
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            font-size: 1.70rem;
-            margin-bottom: 310px;
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 1.80rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 310px;
+        .nav-link {
+            font-size: 1rem;
         }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
 
         #level-title {
-            font-size: 1.70rem;
-            margin-bottom: 270px;
+            font-size: 1.36rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 270px;
+        #third-section h2 {
+            font-size: 1.95rem;
         }
 
-        .container {
-            width: 100%;
+        #third-section h3 {
+            font-size: 1.85rem;
         }
-    
-        .btn {
-            height: 125px;
-            width: 125px;
+        
+        #third-section p {
+            font-size: 1.15rem;
         }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 1.70rem;
-            margin-bottom: 230px;
+        
+        #fourth-section h2 {
+            font-size: 1.95rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 230px;
+        #fourth-section h5 {
+            font-size: 1.45rem;
         }
-
-        .container {
-            width: 100%;
+        
+        #fourth-section p {
+            font-size: 1.15rem;
         }
     
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 1.70rem;
-            margin-bottom: 180px;
-        }
-
         #footer-text {
-            font-size: 0.80rem;
-            margin-top: 180px;
+            font-size: 0.86rem;
         }
 
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 680px) {
-
-        #level-title {
-            font-size: 1.70rem;
-            margin-bottom: 110px;
-        }
-
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 110px;
-        }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
+        .btn-ext-css {
             height: 125px;
             width: 125px;
         }
@@ -1108,120 +618,58 @@ body {
 
 }
 
-@media (max-width: 410px) {
+@media (max-width: 440px) {
 
     @media (max-height: 1080px) {
 
-        #level-title {
-            font-size: 1.60rem;
-            margin-bottom: 322px;
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 1.55rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 322px;
+        .nav-link {
+            font-size: 0.90rem;
         }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            margin: 20px;
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 1000px) {
 
         #level-title {
-            font-size: 1.60rem;
-            margin-bottom: 282px;
+            font-size: 1.22rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 282px;
+        #third-section h2 {
+            font-size: 1.55rem;
         }
 
-        .container {
-            width: 100%;
+        #third-section h3 {
+            font-size: 1.45rem;
         }
-    
-        .btn {
-            margin: 20px;
-            height: 125px;
-            width: 125px;
+        
+        #third-section p {
+            font-size: 1.15rem;
         }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 1.60rem;
-            margin-bottom: 240px;
+        
+        #fourth-section h2 {
+            font-size: 1.55rem;
         }
 
-        #footer-text {
-            font-size: 0.80rem;
-            margin-top: 240px;
+        #fourth-section h5 {
+            font-size: 1.35rem;
         }
-
-        .container {
-            width: 100%;
+        
+        #fourth-section p {
+            font-size: 1.15rem;
         }
     
-        .btn {
-            margin: 20px;
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 1.60rem;
-            margin-bottom: 190px;
-        }
-
         #footer-text {
-            font-size: 0.80rem;
-            margin-top: 190px;
+            font-size: 0.86rem;
         }
 
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
-            margin: 20px;
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 658px) {
-
-        #level-title {
-            font-size: 1.60rem;
-        }
-
-        #footer-text {
-            font-size: 0.80rem;
-        }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            margin: 20px;
+        .btn-ext-css {
             height: 125px;
             width: 125px;
         }
@@ -1230,121 +678,58 @@ body {
 
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
 
-    @media (max-height: 1000px) {
+    @media (max-height: 1080px) {
+
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 1.45rem;
+        }
+
+        .nav-link {
+            font-size: 0.85rem;
+        }
 
         #level-title {
-            font-size: 1.50rem;
-            margin-bottom: 295px;
+            font-size: 1.10rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 295px;
+        #third-section h2 {
+            font-size: 1.55rem;
         }
 
-        .container {
-            width: 100%;
+        #third-section h3 {
+            font-size: 1.45rem;
         }
-    
-        .btn {
-            margin: 15px;
-            height: 125px;
-            width: 125px;
+        
+        #third-section p {
+            font-size: 1.15rem;
         }
-
-    }
-
-    @media (max-height: 916px) {
-
-        #level-title {
-            font-size: 1.50rem;
-            margin-bottom: 252px;
+        
+        #fourth-section h2 {
+            font-size: 1.55rem;
         }
 
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 252px;
+        #fourth-section h5 {
+            font-size: 1.35rem;
         }
-
-        .container {
-            width: 100%;
+        
+        #fourth-section p {
+            font-size: 1.15rem;
         }
     
-        .btn {
-            margin: 15px;
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 1.50rem;
-            margin-bottom: 202px;
-        }
-
         #footer-text {
-            font-size: 0.70rem;
-            margin-top: 202px;
+            font-size: 0.76rem;
         }
 
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
-            margin: 15px;
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 720px) {
-
-        #level-title {
-            font-size: 1.50rem;
-            margin-bottom: 155px;
-        }
-
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 155px;
-        }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            margin: 15px;
-            height: 125px;
-            width: 125px;
-        }
-
-    }
-
-    @media (max-height: 600px) {
-
-        #level-title {
-            font-size: 1.50rem;
-            margin-bottom: 95px;
-        }
-
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 95px;
-        }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
+        .btn-ext-css {
             margin: 15px;
             height: 125px;
             width: 125px;
@@ -1354,100 +739,61 @@ body {
 
 }
 
-@media (max-width: 370px) {
+@media (max-width: 360px) {
 
-    @media (max-height: 916px) {
+    @media (max-height: 1080px) {
+
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 1.30rem;
+        }
+
+        .nav-link {
+            font-size: 0.80rem;
+        }
 
         #level-title {
-            font-size: 1.30rem;
-            margin-bottom: 280px;
+            font-size: 0.98rem;
+        }
+
+        #third-section h2 {
+            font-size: 1.45rem;
+        }
+
+        #third-section h3 {
+            font-size: 1.35rem;
+        }
+        
+        #third-section p {
+            font-size: 1.05rem;
+        }
+        
+        #fourth-section h2 {
+            font-size: 1.45rem;
+        }
+
+        #fourth-section h5 {
+            font-size: 1.25rem;
+        }
+        
+        #fourth-section p {
+            font-size: 1.05rem;
         }
     
         #footer-text {
-            font-size: 0.70rem;
-            margin-top: 280px;
+            font-size: 0.72rem;
         }
     
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
+        .btn-ext-css {
             margin: 15px;
-            height: 100px;
-            width: 100px;
-        }
-
-    }
-
-    @media (max-height: 816px) {
-
-        #level-title {
-            font-size: 1.30rem;
-            margin-bottom: 230px;
-        }
-    
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 230px;
-        }
-    
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            margin: 15px;
-            height: 100px;
-            width: 100px;
-        }
-
-    }
-
-    @media (max-height: 720px) {
-
-        #level-title {
-            font-size: 1.30rem;
-            margin-bottom: 182px;
-        }
-    
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 182px;
-        }
-    
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            margin: 15px;
-            height: 100px;
-            width: 100px;
-        }
-
-    }
-
-    @media (max-height: 600px) {
-
-        #level-title {
-            font-size: 1.30rem;
-            margin-bottom: 122px;
-        }
-    
-        #footer-text {
-            font-size: 0.70rem;
-            margin-top: 122px;
-        }
-    
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            margin: 15px;
-            height: 100px;
-            width: 100px;
+            height: 125px;
+            width: 125px;
         }
 
     }
@@ -1456,74 +802,64 @@ body {
 
 @media (max-width: 320px) {
 
-    @media (max-height: 816px) {
+    @media (max-height: 1080px) {
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 1.22rem;
+        }
+
+        .nav-link {
+            font-size: 0.75rem;
+        }
 
         #level-title {
-            font-size: 1.20rem;
-            margin-bottom: 242px;
+            font-size: 0.90rem;
+        }
+
+        #third-section h2 {
+            font-size: 1.45rem;
+        }
+
+        #third-section h3 {
+            font-size: 1.35rem;
+        }
+        
+        #third-section p {
+            font-size: 1.05rem;
+        }
+        
+        #fourth-section h2 {
+            font-size: 1.45rem;
+        }
+
+        #fourth-section h5 {
+            font-size: 1.25rem;
+        }
+        
+        #fourth-section p {
+            font-size: 1.05rem;
         }
     
         #footer-text {
-            font-size: 0.60rem;
-            margin-top: 242px;
+            font-size: 0.65rem;
         }
 
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
+        .btn-ext-css {
             margin: 15px;
-            height: 90px;
-            width: 90px;
-        }
-
-    }
-
-    @media (max-height: 720px) {
-
-        #level-title {
-            font-size: 1.20rem;
-            margin-bottom: 195px;
-        }
-    
-        #footer-text {
-            font-size: 0.60rem;
-            margin-top: 195px;
-        }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            margin: 15px;
-            height: 90px;
-            width: 90px;
-        }
-
-    }
-
-    @media (max-height: 600px) {
-
-        #level-title {
-            font-size: 1.20rem;
-            margin-bottom: 135px;
-        }
-    
-        #footer-text {
-            font-size: 0.60rem;
-            margin-top: 135px;
-        }
-
-        .container {
-            width: 100%;
-        }
-    
-        .btn {
-            margin: 15px;
-            height: 90px;
-            width: 90px;
+            height: 100px;
+            width: 100px;
         }
 
     }
@@ -1532,26 +868,64 @@ body {
 
 @media (max-width: 300px) {
 
-    @media (max-height: 600px) {
+    @media (max-height: 1080px) {
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 1.10rem;
+        }
+
+        .nav-link {
+            font-size: 0.75rem;
+        }
 
         #level-title {
-            font-size: 1.10rem;
-            margin-bottom: 145px;
+            font-size: 0.85rem;
+        }
+
+        #third-section h2 {
+            font-size: 1.45rem;
+        }
+
+        #third-section h3 {
+            font-size: 1.35rem;
+        }
+        
+        #third-section p {
+            font-size: 0.95rem;
+        }
+        
+        #fourth-section h2 {
+            font-size: 1.45rem;
+        }
+
+        #fourth-section h5 {
+            font-size: 1.25rem;
+        }
+        
+        #fourth-section p {
+            font-size: 0.95rem;
         }
     
         #footer-text {
-            font-size: 0.60rem;
-            margin-top: 145px;
+            font-size: 0.62rem;
         }
 
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
+        .btn-ext-css {
             margin: 15px;
-            height: 80px;
-            width: 80px;
+            height: 100px;
+            width: 100px;
         }
 
     }
@@ -1560,26 +934,64 @@ body {
 
 @media (max-width: 280px) {
 
-    @media (max-height: 600px) {
+    @media (max-height: 1080px) {
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 0.98rem;
+        }
+
+        .nav-link {
+            font-size: 0.70rem;
+        }
 
         #level-title {
-            font-size: 1rem;
-            margin-bottom: 158px;
+            font-size: 0.80rem;
+        }
+
+        #third-section h2 {
+            font-size: 1.35rem;
+        }
+
+        #third-section h3 {
+            font-size: 1.25rem;
+        }
+        
+        #third-section p {
+            font-size: 0.95rem;
+        }
+        
+        #fourth-section h2 {
+            font-size: 1.35rem;
+        }
+
+        #fourth-section h5 {
+            font-size: 1.15rem;
+        }
+        
+        #fourth-section p {
+            font-size: 0.95rem;
         }
     
         #footer-text {
-            font-size: 0.50rem;
-            margin-top: 158px;
+            font-size: 0.55rem;
         }
 
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
+        .btn-ext-css {
             margin: 10px;
-            height: 80px;
-            width: 80px;
+            height: 100px;
+            width: 100px;
         }
 
     }
@@ -1588,26 +1000,64 @@ body {
 
 @media (max-width: 260px) {
 
-    @media (max-height: 600px) {
+    @media (max-height: 1080px) {
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+
+        /* Navigation Bar */
+        
+        .navbar-brand {
+            font-size: 0.85rem;
+        }
+
+        .nav-link {
+            font-size: 0.65rem;
+        }
 
         #level-title {
-            font-size: 0.90rem;
-            margin-bottom: 168px;
+            font-size: 0.72rem;
+        }
+
+        #third-section h2 {
+            font-size: 1.25rem;
+        }
+
+        #third-section h3 {
+            font-size: 1.15rem;
+        }
+        
+        #third-section p {
+            font-size: 0.85rem;
+        }
+        
+        #fourth-section h2 {
+            font-size: 1.25rem;
+        }
+
+        #fourth-section h5 {
+            font-size: 1.05rem;
+        }
+        
+        #fourth-section p {
+            font-size: 0.85rem;
         }
     
         #footer-text {
             font-size: 0.50rem;
-            margin-top: 168px;
         }
 
-        .container {
+        .container-ext-css {
             width: 100%;
+            margin: 15% auto;
         }
     
-        .btn {
+        .btn-ext-css {
             margin: 10px;
-            height: 70px;
-            width: 70px;
+            height: 90px;
+            width: 90px;
         }
 
     }
